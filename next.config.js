@@ -1,11 +1,11 @@
 /** @type {import('next').NextConfig} */
 
-const DEPLOYED_TO_GITHUB_PAGES = process.env.NODE_ENV === 'production';
+// const DEPLOYED_TO_GITHUB_PAGES = process.env.NODE_ENV === 'production';
 
-const repoName = 'gmazunik.github.io';
+// const repoName = 'gmazunik.github.io';
 
-const basePath = DEPLOYED_TO_GITHUB_PAGES ? `/${repoName}` : '';
-const assetPrefix = DEPLOYED_TO_GITHUB_PAGES ? `/${repoName}/` : '';
+// const basePath = DEPLOYED_TO_GITHUB_PAGES ? `/${repoName}` : '';
+// const assetPrefix = DEPLOYED_TO_GITHUB_PAGES ? `/${repoName}/` : '';
 
 const nextConfig = {
     output: 'export',
@@ -13,8 +13,8 @@ const nextConfig = {
         unoptimized: true,
     },
     reactStrictMode: true,
-    basePath,
-    assetPrefix,
+    // basePath,
+    // assetPrefix,
 }
 
 module.exports = nextConfig
